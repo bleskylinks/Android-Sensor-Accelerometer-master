@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:weightSum="1">
+
+	<TextView
+		android:id="@+id/t1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20sp"
+		android:textSize="30sp"
+		android:text=""
+		android:hint="This will changed"
+		android:gravity="center" />
+
+	<TextView
+	    android:id="@+id/textX"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="30sp" 
+	    android:text="" />
+	<TextView
+	    android:id="@+id/textY"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5sp"
+	    android:textSize="30sp" 
+	    android:text="" />
+	<TextView
+	    android:id="@+id/textZ"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5sp"
+	    android:textSize="30sp" 
+	    android:text="" />
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="52dp"
+		android:weightSum="1">
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Start Service"
+			android:id="@+id/ser_start"
+			android:layout_weight="0.19"
+			android:onClick="startService" />
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Stop Service"
+			android:id="@+id/ser_stop"
+			android:layout_weight="0.19"
+			android:onClick="stopService" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="52dp">
+
+		<CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Monitoring"
+            android:id="@+id/checkBox"
+			android:layout_weight="0.05"
+			android:checked="false" />
+
+	</LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/ccc/ble/Android-Sensor-Accelerometer-master/app/src/main/res/layout/main.xml -->
