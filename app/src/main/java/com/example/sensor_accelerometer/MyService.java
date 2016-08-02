@@ -32,6 +32,7 @@ public class MyService extends Service {
      * Class used for the client Binder.  Because we know this service always
      * runs in the same process as its clients, we don't need to deal with IPC.
      */
+
     public class LocalBinder extends Binder {
         MyService getService() {
             // Return this instance of LocalService so clients can call public methods
@@ -147,6 +148,8 @@ public class MyService extends Service {
         v.vibrate(400);
 
     }
+
+    // SMS alert code
 
     protected void sendSMSMessage() {
         Log.i("Send SMS", "");

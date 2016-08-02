@@ -116,7 +116,8 @@ public class Main extends Activity {
 
 	protected void sendSMSMessage() {
 		Log.i("Send SMS", "");
-		String phoneNo = "9764005401";
+		//Phone Number here
+		String phoneNo = "9999999";
 		String message = "Alert.....!!!";
 
 		try {
